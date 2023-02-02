@@ -35,6 +35,7 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     /* background: #E0F2FE; */
+    font-family: var(--ff-primary);
 }
   
 a:not([class]) {
@@ -52,14 +53,26 @@ a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
-img {
-    width: 100%;
+
+.bg-kirby { 
+    
+    background-image: url(assets/clound.jpg);
+    background-repeat: no-repeat;
+        
+    background-size:contain;
+    padding-top: 200px;
+    padding-bottom: 270px;
+    
 
 }
 
-.bg-kirby {
-    background-image: url("assets/KIRBY.png");
+
+.kiby-svg img {
     background-repeat: no-repeat;
-    min-height: 100vh;
-    background-size: contain;
+    margin: 0;
+}
+
+.characters-bg{
+    color: white;
+    background-color: #E11D48;
 }
