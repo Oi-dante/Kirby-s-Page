@@ -34,7 +34,7 @@ body {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background: #E0F2FE;
+    /* background: #E0F2FE; */
 }
   
 a:not([class]) {
@@ -55,4 +55,11 @@ a:not([class]) {
 img {
     width: 100%;
 
+}
+
+.bg-kirby {
+    background-image: url("assets/KIRBY.png");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: contain;
 }
