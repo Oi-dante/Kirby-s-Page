@@ -44,49 +44,94 @@ img,
 picture,
 svg {
     max-width: 100%;
-    display: block;
-}
+    /* display: block; */
+}    
 
 a:not([class]) {
     text-decoration-skip-ink: auto;
+}    
+
+
+.kirby-svg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+    
+}    
+
+
+.characters-bg{
+    color: white;
+    background-color: #E11D48;
 }
+
+
+
 
 /* HEADER */
+ 
+.primary-nav {
+    padding: 0;
+    margin: 0;
 
-.primary-header {
-    align-items: center;
-    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
 
-}
+    
+    
+
+    /* background:hsl(0 0% 0% / 0.5); */
+}    
+
+
+.flex {
+    display: flex;
+    gap: 2rem;
+}    
+
+/* @supports (backdrop-filter: blur(1rem)){
+    .primary-nav {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }      
+}    
 
 .primary-nav a {
     text-decoration: none;
     color: black;
-}
+}    
 
 .primary-nav a > [aria-hidden="true"] {
-   font-weight: 700;
-    margin-inline-end: 0.75em;
-}
+   font-weight: 700; 
+   margin-inline-end: 0.75em;
+}   
 
 @media (min-width: 35em){
     .primary-nav {
+        
         position: fixed;
+        z-index: 1000;
         inset: 0 30%;
-        background: steelblue;
+
         flex-direction: column;
         align-items: center;
-
         padding: min(30vh, 10rem) 2em;
+    }        
+}     */
 
-        list-style: none;
-        text-decoration: none;
+/* .mobile-nav-toggle {
+    position: absolute;
+    z-index: 9999;
+    background: url(assets/HAMBURGUER.png);
+    background: red;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+}    
 
-        background:hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-    }    
-}
-/* 
 .primary-nav {
     list-style: none;
     text-decoration: none;
@@ -96,32 +141,13 @@ a:not([class]) {
     border-radius: 100px;
     
 } */
-.flex {
-    display: flex;
-    gap: 3rem;
-}
 
-
-/* .bg-kirby { 
-    
-    background-image: url(assets/clound.jpg);
+/* BACKGROUND IMG */
+.bg-kirby {   
+    background-image: url(assets/clound-png.png);
     background-repeat: no-repeat;
-        
-    background-size:contain;
-    padding-top: 200px;
-    padding-bottom: 270px;
-    
-
-}
-
-
-.kiby-svg img {
-    background-repeat: no-repeat;
-    margin: 0;
-}
-
-.characters-bg{
-    color: white;
-    background-color: #E11D48;
-} */
+    background-position: top center;
+    background-size:cover;
+  
+} 
 
